@@ -17,7 +17,8 @@ let package: Package = .init(
 			supportedDeviceFamilies: [.pad, .phone],
 			supportedInterfaceOrientations: [
 				.portrait, .landscapeRight, .landscapeLeft, .portraitUpsideDown(.when(deviceFamilies: [.pad]))
-			]
+			],
+			additionalInfoPlistContentFilePath: "Info.plist"
 		)
 	],
 	targets: [
